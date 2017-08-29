@@ -34,7 +34,7 @@ public class Parser {
 		String path = args[0];
 		String folder = PATH_RESULT_DIRECTORY;
 		if (args.length == 2){
-			folder = args[1];		
+			folder = args[1];
 		}
 		Parser paser = new Parser();
 		paser.tratarArquivo(path, folder);
@@ -51,7 +51,7 @@ public class Parser {
 
 
 	private void gravarArquivo(Suite suiteErro) throws IOException {
-		String file = FILE_PATH + FILE_NAME;
+		String file = FILE_NAME;
 		File f = new File(file);
 		FileWriter fw = new FileWriter(f);
 		BufferedWriter bw = new BufferedWriter(fw);
