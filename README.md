@@ -1,14 +1,17 @@
-# parserTestsJava
-# Para gerar o parser.jar, faça o seguinte:
+## Para gerar o parser.jar, faÃ§a o seguinte:
 
-cd src/
+`unzip parserResultsRocketEngine.zip`
 
-javac $(find . -name '*.java')
+`cd src/`
 
-jar -cvfm parser.jar MANIFEST.MF br/com/confidence/objecttoxml/*.class br/com/confidence/parser/Parser.class br/com/confidence/utils/*.class br/com/confidence/xmltoobject/*.class
+`javac $(find . -name '*.java')`
 
-# Agora é só executados os comandos de gerar o parser. Exemplo build '20170828110946' no diretório '/home/buil-continua/resources-build-wildfly/rocket-engine/results/':
+`jar -cvfm parser.jar MANIFEST.MF br/com/confidence/objecttoxml/*.class br/com/confidence/parser/Parser.class br/com/confidence/utils/*.class br/com/confidence/xmltoobject/*.class`
 
-java -jar parser.jar 20170828110946 /home/buil-continua/resources-build-wildfly/rocket-engine/results/
 
-# Será criado um arquivo 'testng-failures.xml' no diretório onde foi executado o parser.jar.
+## Agora Ã© sÃ³ executados os comandos de gerar o parser. Exemplo build '584397584395'
+
+`java -jar parser.jar 584397584395 /home/buil-continua/resources-build-wildfly/rocket-engine/results/`
+
+
+## SerÃ¡ criado um arquivo 'testng-failures.xml' no diretÃ³rio onde foi executado o parser.jar.
